@@ -101,9 +101,11 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         int year=c.get(Calendar.YEAR);
         int month=c.get(Calendar.MONTH);
         int day=c.get(Calendar.DAY_OF_MONTH);
+        c.add(Calendar.DATE,3);
 
         DatePickerDialog datePickerDialog=new DatePickerDialog(
                 this,this,year,month,day);
+        datePickerDialog.getDatePicker().setMaxDate(c.getTimeInMillis());
         datePickerDialog.show();
     }
 
