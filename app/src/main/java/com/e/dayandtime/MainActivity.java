@@ -124,7 +124,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         },hour,minute,false);
         timePickerDialog.show();
 
-
     }
 
 
